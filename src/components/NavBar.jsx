@@ -17,9 +17,9 @@ const NavBar = () => {
             </Link>
           </div>
           <div className="hidden md:flex space-x-3 font-semibold text-lg">
-            <a className="py-2" href="!#">
-              Soruce Code
-            </a>
+            <Link to={"/code"} className="py-2" href="!#">
+              Source Code
+            </Link>
             <Link
               className="btn bg-blue-500 px-4 rounded-md py-2 text-white"
               to={"/login"}
@@ -57,12 +57,12 @@ const NavBar = () => {
                       </li>
                     </Link>
                     <hr />
-                    <a href="!#">
+                    <Link to={"/code"}>
                       <li className="pl-3 py-2 hover:bg-gray-200 transition ease-in-out">
                         <i className="fa-brands fa-github mx-2 text-xl"></i>{" "}
                         Source Code
                       </li>
-                    </a>
+                    </Link>
                   </ul>
                 </div>
               )}

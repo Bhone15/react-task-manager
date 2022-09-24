@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
-import { Home, Login, Register } from "./pages";
+import { Home, Login, Register, Code } from "./pages";
 import MainHeader from "./components/MainHeader";
 import Dashboard from "./pages/Dashboard";
 
@@ -27,6 +27,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/code" element={<Code />} />
         <Route path="/dashboard/*" element={<Dashboard />} />
       </Routes>
     </>
